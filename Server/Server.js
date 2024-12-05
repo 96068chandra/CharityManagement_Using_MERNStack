@@ -8,8 +8,8 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended : true }));
 app.use(cors());
 app.use(bodyParser.json());
-
-
+const razorpayRoutes = require('./app/routes/razorpayRoutes'); // Import Razorpay routes
+app.use('/api/razorpay', razorpayRoutes);
 // Connecting MongoDb
 // mongodb://localhost:27017/Charity
 // mongodb+srv://kushang:kushang123@cluster0.hbrmt.mongodb.net/charity?retryWrites=true&w=majority
