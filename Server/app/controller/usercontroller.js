@@ -209,3 +209,23 @@ exports.updateUserProfile = async (req,res) => {
         res.status(400).send(error);
     }
 };
+
+
+exports.getUserNameByEmail=async(req,res)=>{
+    const email=req.query.email;
+    try{
+        const user=await userModel.findOne({email:email});
+        console.log("User from user controller",user);
+        if(user){
+            console.log("Entr to if block","user details");
+            
+            res.status(200).json({status:200,user});
+        }
+        else{
+            res.status(404).json({staus:404, msg:"User not found"});
+        }
+    }
+    catch(error){
+        res.status(500).json({ status: 500, msg: "Server error", error });
+    }
+};

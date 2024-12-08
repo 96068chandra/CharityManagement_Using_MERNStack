@@ -13,4 +13,6 @@ module.exports = (app) => {
     app.get('/fetchallcategory', userCon.fetchAllCategory);
     app.post('/dodonat', userCon.doDonat);
     app.post('/fetchalldonation',userCon.fetchAllDonation);
+    app.get('/getUserNameByEmail',userCon.getUserNameByEmail);
+
 }

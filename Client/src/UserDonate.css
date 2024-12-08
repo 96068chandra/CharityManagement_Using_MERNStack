@@ -1,0 +1,331 @@
+Global Styles
+/*body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .donate-page {
+    padding: 2rem;
+  }
+  
+  .donate-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .donate-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .donate-header p {
+    color: #777;
+  }
+  
+  .donate-content {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+  }
+  
+  .donate-form, .donate-invoice {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 45%;
+  }
+  
+  .donate-form h2, .donate-invoice h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .btn {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    background: #007bff;
+    color: #fff;
+  }
+  
+  .btn-success {
+    background: #28a745;
+    color: #fff;
+  }
+  
+  .btn-danger {
+    background: #dc3545;
+    color: #fff;
+  }
+  
+  .invoice-details {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .invoice-details li {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
+  
+  .invoice-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+*/
+
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: #f9f9f9;
+    color: #333;
+  }
+  
+  .donate-page {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header Section */
+  .donate-header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: linear-gradient(135deg, #007bff, #6610f2);
+    color: #ffccbc;
+    border-radius: 8px;
+  }
+  
+  .donate-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .donate-header p {
+    font-size: 1.2rem;
+  }
+  
+  /* Content Layout */
+  .donate-content {
+    display: flex;
+    flex-wrap:no-wrap;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  /* Donation Form */
+  .donate-form {
+    background: #b5cac0;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+   flex-direction: column;
+   align-items: center;
+  }
+  
+  .donate-form h2, .donate-invoice h2 {
+    margin-bottom: 1rem;
+    color: #000000;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #555;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #f9d8d4;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+  
+  .form-control:focus {
+    outline: none;
+    border-color: #fac8c3;
+    border-width: 2px;
+    box-shadow: 0 6px 12px rgba(235, 4, 4, 0.1);
+  }
+  
+  /* Buttons */
+  .btn {
+    justify-content: center;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+    
+  }
+  .btn-proceed {
+    background: #cf7c00;
+    color: white;
+    margin-left: 190px;
+  }
+
+  .btn-proceed:hover {
+    background: #871818;
+    color:white;
+    margin-left: 190px;
+  }
+  
+  .btn-success {
+    background: #28a745;
+    color: white;
+    margin-left: 30px;
+  }
+  
+  .btn-success:hover {
+    background: #218838;
+  }
+
+  .btn-danger {
+    background: #dc3545;
+    color: white;
+    margin-left: 100px;
+  }
+  
+  .btn-danger:hover {
+    background: #c82333;
+  }
+  
+ /* Invoice Section
+  .donate-invoice {
+    background: #f8f9fa;
+    border-left: 4px solid #007bff;
+  }
+  
+  .invoice-details {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .invoice-details li {
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .invoice-details li strong {
+    color: #333;
+  }
+  
+  .invoice-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  */
+
+  /* Updated Invoice Card Styles */
+.donate-invoice {
+   
+        background: #a8dadc; /* Softer tone */
+      
+    width: 50%;  
+    padding: 3rem 3rem;
+    border-radius: 12px;
+    
+  }
+  
+  .donate-invoice:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .donate-invoice h2 {
+    text-align: center;
+    color: #000000;
+    margin-top: 25px;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+  }
+  
+  .invoice-details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .invoice-details li {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem  2rem;
+    font-size: 1.2rem;
+    color: #333;
+    border-bottom: 1px solid #eee;
+  }
+  
+  
+  
+  /* Button Container for Invoice */
+  .invoice-actions {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-top: 2rem;
+
+  }
+  
+  /* Animation for Smooth Appearance */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .donate-content {
+      flex-direction: column;
+    }
+  }
+  

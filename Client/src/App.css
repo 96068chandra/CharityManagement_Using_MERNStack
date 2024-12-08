@@ -55,3 +55,13 @@
   text-align: center;
   border-top: none;
 }
+.nav-item h3{
+  margin-left: 270px;
+ }
+ .btn-logout{
+  background-color: #dc3545;
+  color:white;
+}
+.btn-logout:hover{
+  opacity: 0.7;
+}
