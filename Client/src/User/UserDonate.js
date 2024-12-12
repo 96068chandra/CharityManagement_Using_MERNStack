@@ -423,7 +423,7 @@ function UserDonate() {
             </select>
           </div>
 
-          <div className="form-group">
+          {/* <div className="form-group">
             <label>Transaction ID</label>
             <input
               type="text"
@@ -432,7 +432,7 @@ function UserDonate() {
               onChange={(e) => settrid(e.target.value)}
               required
             />
-          </div>
+          </div> */}
 
           <div className="form-group">
             <label>Donation Amount (₹)</label>
